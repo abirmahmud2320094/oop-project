@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="481.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.opp_project_g10.abirm.u4c">
+   <children>
+      <Label layoutX="241.0" layoutY="14.0" text="Coordinate with Staff " />
+      <ComboBox fx:id="selectEventCB" layoutX="37.0" layoutY="23.0" prefWidth="150.0" promptText="Select Event" />
+      <Button layoutX="37.0" layoutY="61.0" mnemonicParsing="false" onAction="#sendScheduleBUTTONAction" text="Send Schedule" />
+      <Label fx:id="confirmationorrrorLabel" layoutX="37.0" layoutY="102.0" text="confirmation or error" />
+      <Label layoutX="231.0" layoutY="53.0" text="Assign Roles to Staff" />
+      <ComboBox fx:id="assignRoleCB" layoutX="212.0" layoutY="85.0" prefWidth="150.0" promptText="Assign Role" />
+      <Button layoutX="247.0" layoutY="131.0" mnemonicParsing="false" onAction="#ssignRoleButton" text="Assign Role" />
+      <TableView fx:id="staffTV" layoutX="22.0" layoutY="209.0" prefHeight="200.0" prefWidth="324.0">
+        <columns>
+          <TableColumn fx:id="nameTc" prefWidth="75.0" text="Name" />
+          <TableColumn fx:id="roleTC" prefWidth="75.0" text="Role" />
+            <TableColumn fx:id="availableTimeTC" prefWidth="89.0" text="Available Time" />
+            <TableColumn fx:id="statusTC" prefWidth="112.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="117.0" layoutY="181.0" text="View Staff Availability" />
+      <Label layoutX="443.0" layoutY="14.0" text="Confirm Staff Assignments" />
+      <Button layoutX="449.0" layoutY="40.0" mnemonicParsing="false" onAction="#confirmAssignmentsButton" text="Confirm Assignments" />
+      <Label fx:id="isplaysuccesserrorconfirmationLabel" layoutX="420.0" layoutY="79.0" text="isplay success/error of confirmation" />
+      <Button layoutX="446.0" layoutY="118.0" mnemonicParsing="false" onAction="#notifyAssignedStaffButtion" text="Notify Assigned Staff" />
+      <Label fx:id="displaynotificationsentstatuslabei" layoutX="430.0" layoutY="173.0" text="display notification sent status" />
+   </children>
+</AnchorPane>

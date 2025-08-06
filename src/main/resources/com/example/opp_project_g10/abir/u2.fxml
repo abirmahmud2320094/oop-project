@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="421.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.opp_project_g10.abirm.u2c">
+   <children>
+      <Label layoutX="277.0" layoutY="14.0" text="Edit Event Details" />
+      <ComboBox fx:id="selectevencombobox" layoutX="50.0" layoutY="23.0" prefWidth="150.0" promptText="Select Event from Schedule" />
+      <DatePicker fx:id="eventDP" layoutX="42.0" layoutY="72.0" promptText="Modify Event Date/Time" />
+      <Label layoutX="253.0" layoutY="49.0" text="Change Assigned Resources" />
+      <CheckBox fx:id="lightingsystemCHB" layoutX="261.0" layoutY="85.0" mnemonicParsing="false" text="Lighting System" />
+      <CheckBox fx:id="soundsystemCHB" layoutX="261.0" layoutY="119.0" mnemonicParsing="false" text="Sound System" />
+      <CheckBox fx:id="securitypersonnelCB" layoutX="261.0" layoutY="150.0" mnemonicParsing="false" text="Security Personnel" />
+      <TextArea fx:id="teamsTA" layoutX="35.0" layoutY="119.0" prefHeight="200.0" prefWidth="200.0" promptText="Performers/Teams" />
+      <Button layoutX="464.0" layoutY="19.0" mnemonicParsing="false" onAction="#savechangesBUTTONonAction" text="Save Changes" textFill="#942121" />
+      <Label fx:id="errorlabel" layoutX="451.0" layoutY="58.0" text="To show success/error" />
+   </children>
+</AnchorPane>

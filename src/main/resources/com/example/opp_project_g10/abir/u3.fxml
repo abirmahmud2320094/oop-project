@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="445.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.opp_project_g10.abirm.u3c">
+   <children>
+      <Label layoutX="252.0" layoutY="14.0" text="Allocate Stadium Zones" />
+      <ComboBox fx:id="chooseeventCB" layoutX="42.0" layoutY="19.0" prefWidth="150.0" promptText="Choose Event" />
+      <CheckBox layoutX="42.0" layoutY="88.0" mnemonicParsing="false" text="VIP Zone" />
+      <Label layoutX="54.0" layoutY="56.0" text="Assign Zones for Roles" />
+      <CheckBox fx:id="generalAudienceCHB" layoutX="42.0" layoutY="115.0" mnemonicParsing="false" text="General Audience" />
+      <CheckBox fx:id="pressZonCHB" layoutX="42.0" layoutY="141.0" mnemonicParsing="false" text="Press Zon" />
+      <CheckBox fx:id="staffServiceZoneCHB" layoutX="40.0" layoutY="165.0" mnemonicParsing="false" text="Staff/Service Zone" />
+      <TextArea fx:id="setZoneRestrictionsTA" layoutX="200.0" layoutY="50.0" prefHeight="200.0" prefWidth="200.0" text="Set Zone Restrictions&#10;&#10;" />
+      <Button layoutX="450.0" layoutY="43.0" mnemonicParsing="false" onAction="#confirmZonePlanButtonAction" text="Confirm Zone Plan" />
+      <Label fx:id="confirmationorvalidationmessageLabiel" layoutX="407.0" layoutY="97.0" text="confirmation or validation message" />
+   </children>
+</AnchorPane>
