@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="502.0" prefWidth="670.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.opp_project_g10.abirm.u6c">
+   <children>
+      <Label layoutX="53.0" layoutY="11.0" text="Review Booking Requests " textFill="#c91616">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="viewPendingBookingFormsLabel" layoutX="29.0" layoutY="37.0" text="View Pending Booking Forms" />
+      <TableView fx:id="tableview" layoutX="14.0" layoutY="62.0" prefHeight="218.0" prefWidth="306.0">
+        <columns>
+          <TableColumn fx:id="organizerNameTC" prefWidth="75.0" text="Organizer Name" />
+          <TableColumn fx:id="eventTypeTC" prefWidth="75.0" text="Event Type" />
+            <TableColumn fx:id="requestedDateTC" prefWidth="75.0" text="Requested Date" />
+            <TableColumn fx:id="statusTC" prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <Button layoutX="86.0" layoutY="287.0" mnemonicParsing="false" onAction="#loadPendingRequestsButtonAction" text="Load Pending Requests" />
+      <Label fx:id="verifyOrganizerCredentialsLabel" layoutX="64.0" layoutY="325.0" text="Verify Organizer Credentials" />
+      <TextArea fx:id="organizerCredentialsTA" layoutX="41.0" layoutY="352.0" prefHeight="17.0" prefWidth="200.0" text="Organizer Credentials&#10;" />
+      <Button layoutX="64.0" layoutY="404.0" mnemonicParsing="false" onAction="#verifyCredentialsButtonAction" text="Verify Credentials" />
+      <Label layoutX="385.0" layoutY="14.0" text="Check Date Conflicts" />
+      <Label fx:id="requestedEventDateLabel" layoutX="382.0" layoutY="37.0" text="Requested Event Date" />
+      <Button layoutX="376.0" layoutY="62.0" mnemonicParsing="false" onAction="#checkDateConflictsButtonAction" text="Check Date Conflicts" />
+      <Label layoutX="382.0" layoutY="98.0" prefHeight="0.0" prefWidth="122.0" text="Displays message" />
+      <Label fx:id="approveorRejectRequestlabel" layoutX="382.0" layoutY="129.0" prefHeight="0.0" prefWidth="122.0" text="Approve or Reject Request" />
+      <Button layoutX="405.0" layoutY="159.0" mnemonicParsing="false" onAction="#approveButtionAction" text="Approve" />
+      <Button layoutX="405.0" layoutY="203.0" mnemonicParsing="false" onAction="#rejectButtionAction" text="Reject" />
+      <TextArea fx:id="ReasonTA" layoutX="342.0" layoutY="242.0" prefHeight="17.0" prefWidth="200.0" text="Reason&#10;" />
+      <Label fx:id="notifyRequesterLabel" layoutX="397.0" layoutY="305.0" text="Notify Requester" />
+      <Button layoutX="378.0" layoutY="339.0" mnemonicParsing="false" onAction="#notifyOrganizerButtionAction" text="Notify Organizer" />
+      <Label fx:id="confirmationofnotificationLabel" layoutX="363.0" layoutY="383.0" text="Confirmation of notification" />
+   </children>
+</AnchorPane>

@@ -32,12 +32,14 @@ public class u1c
     @javafx.fxml.FXML
     private TableColumn<event, String> eventTypeTableColumn;
     @javafx.fxml.FXML
-    private ComboBox<event> selectEventTypeComboBox;
+    private ComboBox<String> selectEventTypeComboBox;
     @javafx.fxml.FXML
     private Label errormessagesLabel;
 
     @javafx.fxml.FXML
     public void initialize() {
+
+        selectEventTypeComboBox.getItems().addAll("Joti", "Abir", "hashid");
 
 
     }
