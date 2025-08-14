@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.com.group10.largemultipurposestadium.Laboni.Player.FitnessReportController">
+   <children>
+      <VBox layoutX="110.0" layoutY="18.0" prefHeight="362.0" prefWidth="358.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="29.0" prefWidth="363.0" text="Submit Fitness Report" />
+            <HBox layoutX="10.0" layoutY="39.0" prefHeight="43.0" prefWidth="219.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="82.0" text="Weight (kg):" />
+                  <TextField fx:id="weightField1" prefHeight="25.0" prefWidth="152.0" promptText="Enter weight" />
+               </children>
+            </HBox>
+            <HBox prefHeight="38.0" prefWidth="234.0">
+               <children>
+                  <Label prefHeight="17.0" prefWidth="82.0" text="Sleep Hours:" />
+                  <TextField prefHeight="25.0" prefWidth="154.0" promptText="Enter sleep hours" />
+               </children>
+            </HBox>
+            <Label prefHeight="17.0" prefWidth="75.0" text="Injury Notes:" />
+            <TextArea fx:id="injuryArea" prefHeight="85.0" prefWidth="358.0" promptText="Describe any injuries" />
+            <TableView fx:id="reportTable" prefHeight="181.0" prefWidth="358.0">
+              <columns>
+                <TableColumn fx:id="weightColumn" prefWidth="94.0" text="Weight" />
+                <TableColumn fx:id="sleepColumn" prefWidth="96.0" text="Sleep Hour" />
+                  <TableColumn fx:id="injuryColumn" prefWidth="167.0" text="Injury Notes" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

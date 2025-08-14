@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.com.group10.largemultipurposestadium.Laboni.Player.MatchFixtureController">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="191.0" layoutY="14.0" prefHeight="46.0" prefWidth="246.0" text="Upcoming Match Fixtures" textOverrun="CENTER_ELLIPSIS">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="matchTable" layoutX="50.0" layoutY="171.0" prefHeight="200.0" prefWidth="516.0">
+        <columns>
+          <TableColumn fx:id="competitionColumn" prefWidth="104.0" text="Competition" />
+          <TableColumn fx:id="dateColumn" text="Date" />
+            <TableColumn fx:id="opponentColumn" prefWidth="96.0" text="Opponent" />
+            <TableColumn fx:id="timeColumn" prefWidth="112.0" text="Time" />
+            <TableColumn fx:id="venueColumn" prefWidth="123.0" text="Venue" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER" layoutX="16.0" layoutY="55.0" prefHeight="100.0" prefWidth="581.0">
+         <children>
+            <ComboBox fx:id="competitionFilter" editable="true" prefHeight="25.0" prefWidth="166.0" promptText="Competition" />
+            <DatePicker fx:id="dateFilter" prefHeight="25.0" prefWidth="195.0" promptText="Date" />
+            <TextField fx:id="opponentFilter" prefHeight="25.0" prefWidth="104.0" promptText="Opponent" />
+            <Button fx:id="filterBtn" mnemonicParsing="false" onAction="#filterMatches" text="Filter" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

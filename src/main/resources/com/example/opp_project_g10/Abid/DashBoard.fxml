@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.opp_project_g10.Abid.DashBoardController">
+   <children>
+      <BorderPane fx:id="dashboard_BP" layoutX="5.0" layoutY="5.0" prefHeight="642.0" prefWidth="654.0">
+         <top>
+            <MenuBar BorderPane.alignment="CENTER">
+               <menus>
+                  <Menu fx:id="home_MB" mnemonicParsing="false" text="Home">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Notification" />
+                        <MenuItem mnemonicParsing="false" onAction="#signOut_OA" text="Sign Out" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="CoordinateWithstaff_MB" mnemonicParsing="false" text="Coordinstr With Staff">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#purchaseticket_OA" text="Purchase Ticket" />
+                        <MenuItem mnemonicParsing="false" onAction="#submitfeedback_OA" text="Submit Feedback" />
+                        <MenuItem mnemonicParsing="false" onAction="#browseupcomming_OA" text="Browse Upcomming Events" />
+                        <MenuItem mnemonicParsing="false" onAction="#buyfoodOrdrinks_OA" text="Buy Food Or Drinks" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewLiveinfo_OA" text="View Live Info" />
+                        <MenuItem mnemonicParsing="false" onAction="#reportLostitems_OA" text="Report Lost Items" />
+                        <MenuItem mnemonicParsing="false" onAction="#registarForloyality_OA" text="Registar For Loyalty Program" />
+                        <MenuItem mnemonicParsing="false" onAction="#reserveParkingspot_OA" text="Reserve Parking Spot" />
+                     </items>
+                  </Menu>
+                  <Menu fx:id="StadiumManager_MB" mnemonicParsing="false" text="Stadium Manager">
+                     <items>
+                        <MenuItem mnemonicParsing="false" onAction="#viewOverallstadiumDashboard_OA" text="View Overall Stadium Dashboard" />
+                        <MenuItem mnemonicParsing="false" onAction="#assignStuffroles_OA" text="Assign Stuff Roles" />
+                        <MenuItem mnemonicParsing="false" onAction="#scheduleNewevent_OA" text="Schedule New Events" />
+                        <MenuItem mnemonicParsing="false" onAction="#manageVendor_OA" text="Manage Vendore Assignment" />
+                        <MenuItem mnemonicParsing="false" onAction="#analizeEventReport_OA" text="Analize Event Report" />
+                        <MenuItem mnemonicParsing="false" onAction="#configureTicketPricing_OA" text="Configure Ticket Pricing " />
+                        <MenuItem mnemonicParsing="false" onAction="#handleSpecialGuest_OA" text="Handle Special Guests" />
+                        <MenuItem mnemonicParsing="false" onAction="#superviseStuffChecking_OA" text="Supervise Stuff Checking" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </top>
+         <bottom>
+            <AnchorPane fx:id="anchorPanel" prefHeight="595.0" prefWidth="654.0" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

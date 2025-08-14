@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="datePicker" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.com.group10.largemultipurposestadium.Laboni.Player.TrainingSessionController">
+   <children>
+      <Label alignment="CENTER" layoutX="223.0" layoutY="12.0" prefHeight="43.0" prefWidth="151.0" text="Training Session" textFill="#242222" />
+      <TableView fx:id="scheduleTable" layoutX="60.0" layoutY="193.0" prefHeight="200.0" prefWidth="483.0">
+        <columns>
+          <TableColumn fx:id="dateColumn" prefWidth="108.0" text="Date" />
+          <TableColumn fx:id="timeColumn" prefWidth="124.0" text="Time" />
+            <TableColumn fx:id="locationColumn" prefWidth="124.0" text="Location" />
+            <TableColumn fx:id="coachColumn" prefWidth="124.0" text="Coach" />
+        </columns>
+      </TableView>
+      <TextField fx:id="timeField" layoutX="62.0" layoutY="121.0" prefHeight="25.0" prefWidth="174.0" promptText="Time" />
+      <TextField fx:id="locationField" layoutX="313.0" layoutY="84.0" prefHeight="25.0" prefWidth="158.0" promptText="Location" />
+      <DatePicker layoutX="62.0" layoutY="84.0" promptText="Date" />
+      <Button layoutX="380.0" layoutY="158.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="25.0" prefWidth="84.0" text="Add" />
+      <TextField fx:id="coachField" layoutX="313.0" layoutY="121.0" prefHeight="25.0" prefWidth="158.0" promptText="Coach" />
+   </children>
+</AnchorPane>
