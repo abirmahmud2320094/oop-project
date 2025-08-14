@@ -25,14 +25,17 @@ public class DashBoardController
 
     @javafx.fxml.FXML
     public void configureTicketPricing_OA(ActionEvent actionEvent) {
+        PanelSwitcher.switchPanel(anchorPanel, "Abid/ConfigureTicketPrizig");
     }
 
     @javafx.fxml.FXML
     public void manageVendor_OA(ActionEvent actionEvent) {
+        PanelSwitcher.switchPanel(anchorPanel, "Abid/ManageVendorAssignment");
     }
 
     @javafx.fxml.FXML
     public void assignStuffroles_OA(ActionEvent actionEvent) {
+        PanelSwitcher.switchPanel(anchorPanel, "Abid/AssignStuffrules");
     }
 
     @javafx.fxml.FXML
@@ -61,10 +64,12 @@ public class DashBoardController
 
     @javafx.fxml.FXML
     public void analizeEventReport_OA(ActionEvent actionEvent) {
+        PanelSwitcher.switchPanel(anchorPanel, "Abid/AnalizeEventReport");
     }
 
     @javafx.fxml.FXML
     public void handleSpecialGuest_OA(ActionEvent actionEvent) {
+        PanelSwitcher.switchPanel(anchorPanel, "Abid/HandleSpecialGuests");
     }
 
     @javafx.fxml.FXML
@@ -74,6 +79,7 @@ public class DashBoardController
 
     @javafx.fxml.FXML
     public void viewOverallstadiumDashboard_OA(ActionEvent actionEvent) {
+        PanelSwitcher.switchPanel(anchorPanel, "Abid/ViewOverallStadiumDashboard");
     }
 
     @javafx.fxml.FXML
@@ -83,6 +89,7 @@ public class DashBoardController
 
     @javafx.fxml.FXML
     public void superviseStuffChecking_OA(ActionEvent actionEvent) {
+        PanelSwitcher.switchPanel(anchorPanel, "Abid/SuperviseStuffChecking");
     }
 
     @javafx.fxml.FXML
@@ -92,6 +99,7 @@ public class DashBoardController
 
     @javafx.fxml.FXML
     public void scheduleNewevent_OA(ActionEvent actionEvent) {
+        PanelSwitcher.switchPanel(anchorPanel, "Abid/ScheduleNewEvent");
     }
 
     @javafx.fxml.FXML
