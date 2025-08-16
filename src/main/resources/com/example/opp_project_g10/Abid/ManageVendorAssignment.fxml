@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.opp_project_g10.Abid.ManageVendorAssignmentController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.opp_project_g10.Abid.ManageVendorAssignmentController">
+   <children>
+      <Label layoutX="198.0" layoutY="14.0" prefHeight="28.0" prefWidth="216.0" text="Manage Vendor Assignm">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="148.0" layoutY="77.0" prefHeight="17.0" prefWidth="50.0" text="Vendor" />
+      <TextField layoutX="211.0" layoutY="72.0" />
+      <Label layoutX="125.0" layoutY="140.0" prefHeight="17.0" prefWidth="67.0" text="Assignment" />
+      <TextField layoutX="211.0" layoutY="136.0" />
+      <Button layoutX="238.0" layoutY="210.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" style="-fx-background-color: blue;" text="Assign" textFill="#fffdfd" />
+   </children>
 </AnchorPane>

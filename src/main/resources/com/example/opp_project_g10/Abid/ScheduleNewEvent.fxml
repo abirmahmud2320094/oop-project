@@ -1,14 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.opp_project_g10.Abid.ScheduleNewEventController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.opp_project_g10.Abid.ScheduleNewEventController">
+   <children>
+      <Label layoutX="185.0" layoutY="14.0" prefHeight="28.0" prefWidth="185.0" text="Schedule New Event">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="122.0" layoutY="135.0" text="Event Name" />
+      <Label layoutX="131.0" layoutY="78.0" prefHeight="28.0" prefWidth="68.0" text="Datepicker" />
+      <TextField layoutX="199.0" layoutY="79.0" prefHeight="26.0" prefWidth="171.0" />
+      <TextField layoutX="198.0" layoutY="131.0" prefHeight="26.0" prefWidth="171.0" />
+      <Button layoutX="225.0" layoutY="200.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: blue;" text="Schedule" textFill="#fffdfd">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>

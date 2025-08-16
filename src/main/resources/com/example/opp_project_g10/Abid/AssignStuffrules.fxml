@@ -1,14 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.opp_project_g10.Abid.AssignStuffrulesController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.opp_project_g10.Abid.AssignStuffrulesController">
+   <children>
+      <Label layoutX="197.0" layoutY="14.0" prefHeight="26.0" prefWidth="207.0" text="Staff Roles Assignment">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView layoutX="127.0" layoutY="52.0" prefHeight="224.0" prefWidth="346.0">
+        <columns>
+          <TableColumn prefWidth="175.0" text="Staff Name" />
+          <TableColumn prefWidth="170.0" text="Role" />
+        </columns>
+      </TableView>
+      <Label layoutX="127.0" layoutY="307.0" prefHeight="19.0" prefWidth="37.0" text="Role" />
+      <ComboBox layoutX="165.0" layoutY="299.0" prefHeight="35.0" prefWidth="156.0" />
+      <TextField layoutX="361.0" layoutY="304.0" prefHeight="26.0" prefWidth="106.0" text="Assign" />
+   </children>
 </AnchorPane>
