@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cse213.com.group10.largemultipurposestadium.Laboni.Player.RecoveryProgressController">
+   <children>
+      <Label layoutX="191.0" layoutY="14.0" prefHeight="47.0" prefWidth="246.0" text="RecoveryProgress">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <LineChart fx:id="recoveryChart" layoutX="66.0" layoutY="101.0" prefHeight="198.0" prefWidth="429.0" title="Recovery Percentage Over Time">
+        <xAxis>
+          <CategoryAxis fx:id="dateAxis" label="Assessment Date" side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="percentageAxis" label="Recovery (%)" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Label fx:id="errorLabel" layoutX="111.0" layoutY="306.0" prefHeight="84.0" prefWidth="390.0" />
+   </children>
+</AnchorPane>

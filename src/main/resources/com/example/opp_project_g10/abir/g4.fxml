@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.opp_project_g10.abirm.g4c">
+   <children>
+      <Label layoutX="35.0" layoutY="22.0" text="Manage Seat Inventory" />
+      <Label fx:id="eatingChartPane" layoutX="35.0" layoutY="56.0" text="Seating Chart" />
+      <Button layoutX="16.0" layoutY="83.0" mnemonicParsing="false" onAction="#markReservedButtonOA" text="Mark as Reserved" />
+      <Label fx:id="selectedSeatsList" layoutX="22.0" layoutY="119.0" text="Selected SeatsList" />
+      <Label fx:id="totalSeatsLabel" layoutX="51.0" layoutY="149.0" text="Total Seats: 0" />
+      <Label fx:id="reservedSeatsLabel" layoutX="51.0" layoutY="177.0" text="Reserved: 0" />
+      <Label fx:id="availableSeatsLabel" layoutX="51.0" layoutY="200.0" text="Available: 0" />
+      <Button layoutX="46.0" layoutY="226.0" mnemonicParsing="false" onAction="#blockSeatsButtonOA" text="Block Seats" />
+      <Button layoutX="45.0" layoutY="267.0" mnemonicParsing="false" onAction="#releaseSeatsButtonOA" text="Release Seats" />
+      <Button layoutX="38.0" layoutY="334.0" mnemonicParsing="false" onAction="#refreshStatusButtonOA" text="Refresh Status" />
+      <Label fx:id="statusMessageLabel" layoutX="37.0" layoutY="369.0" text="Status Message Label" />
+      <Label layoutX="33.0" layoutY="310.0" text="Update real-time status" />
+   </children>
+</AnchorPane>
