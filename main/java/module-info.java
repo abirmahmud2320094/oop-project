@@ -5,13 +5,12 @@ module cse213.com.group10.largemultipurposestadium {
 
 
     opens cse213.com.group10.largemultipurposestadium to javafx.fxml;
-    //opens cse213.com.group10.largemultipurposestadium.Laboni to javafx.fxml;
+    //opens cse213.com.group10.largemultipurposestadium.Laboni.Player to javafx.fxml;
 
 
     opens cse213.com.group10.largemultipurposestadium.Laboni.Player to javafx.fxml;
-    //exports cse213.com.group10.largemultipurposestadium to javafx.fxml;
+    //exports cse213.com.group10.largemultipurposestadium.Laboni.Player;
 
-    //opens cse213.com.group10.largemultipurposestadium.Laboni.Player.MedicalStaff to javafx.fxml;
     //opens cse213.com.group10.largemultipurposestadium.Laboni to javafx.fxml;
     //opens cse213.com.group10.largemultipurposestadium.Laboni.Player to javafx.fxml;
     //opens cse213.com.group10.oop-project.Laboni.Player to javafx.fxml;
