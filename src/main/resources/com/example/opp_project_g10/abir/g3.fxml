@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.opp_project_g10.abirm.g3c">
+   <children>
+      <Label layoutX="77.0" layoutY="22.0" text="Handle Refunds" />
+      <TextField fx:id="ticketIdSearchField" layoutX="26.0" layoutY="52.0" text="Enter Ticket ID" />
+      <Button layoutX="67.0" layoutY="90.0" mnemonicParsing="false" onAction="#searchTicketButtonOA" text="Search" />
+      <Label fx:id="eligibilityStatusLabel" layoutX="51.0" layoutY="130.0" text="Not checked" />
+      <Button layoutX="67.0" layoutY="154.0" mnemonicParsing="false" onAction="#checkEligibilityButtonOA" text="Check Eligibility" />
+      <TextArea fx:id="refundReasonArea" layoutX="19.0" layoutY="186.0" prefHeight="32.0" prefWidth="200.0" text="Enter refund reason" />
+      <Label layoutX="47.0" layoutY="235.0" text="Process refund to account" />
+      <TextField fx:id="refundAmountField" layoutX="26.0" layoutY="268.0" text="Refund Amount" />
+      <ComboBox fx:id="refundMethodComboBox" layoutX="31.0" layoutY="312.0" prefWidth="150.0" promptText="Refund Method" />
+      <Button layoutX="68.0" layoutY="350.0" mnemonicParsing="false" onAction="#processRefundButtonOA" text="Process Refund" />
+      <Label fx:id="ticketStatusLabel" layoutX="241.0" layoutY="22.0" text="Pending" />
+      <Button layoutX="212.0" layoutY="52.0" mnemonicParsing="false" onAction="#updateStatusButtonOA" text="Update Status" />
+   </children>
+</AnchorPane>
