@@ -1,5 +1,11 @@
 package com.example.opp_project_g10.abirm;
 
+import javafx.event.ActionEvent;
+import javafx.scene.control.Button;
+import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextArea;
+
 public class g8c
 {
     @javafx.fxml.FXML
