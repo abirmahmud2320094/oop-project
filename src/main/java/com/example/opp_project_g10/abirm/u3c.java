@@ -41,3 +41,8 @@ public class u3c {
         String restrictions = setZoneRestrictionsTA.getText();
 
         // Demo message
+        confirmationorvalidationmessageLabiel.setText("Zone plan confirmed for " + event +
+                "\nGeneral: " + general + ", Staff: " + staff + ", Press: " + press +
+                "\nRestrictions: " + restrictions);
+    }
+}
