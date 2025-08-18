@@ -1,13 +1,15 @@
 package com.example.opp_project_g10.abirm;
 
+import com.example.opp_project_g10.abirm.modelClass.Ticket;
+import javafx.collections.FXCollections;
 import javafx.event.ActionEvent;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.fxml.FXML;
+import javafx.scene.control.*;
 
-public class g1c
-{
+import java.util.ArrayList;
+
+public class g1c {
+
     @javafx.fxml.FXML
     private TextField seatRangeEndField;
     @javafx.fxml.FXML
@@ -23,17 +25,42 @@ public class g1c
     @javafx.fxml.FXML
     private CheckBox studentCheckBox;
     @javafx.fxml.FXML
-    private ComboBox eventComboBox;
+    private ComboBox<String> eventComboBox;
     @javafx.fxml.FXML
     private Label statusLabel;
     @javafx.fxml.FXML
     private CheckBox vipCheckBox;
 
-    @javafx.fxml.FXML
+    // simple list for tickets
+    ArrayList<Ticket> ticketList = new ArrayList<>();
+
+    @FXML
     public void initialize() {
+        // sample events in ComboBox
+        eventComboBox.setItems(FXCollections.observableArrayList("Concert", "Football", "Drama"));
     }
 
-    @javafx.fxml.FXML
+    @FXML
     public void publishButtonOA(ActionEvent actionEvent) {
+        String eventName = eventComboBox.getValue();
+        String startSeat = seatRangeStartField.getText();
+        String endSeat = seatRangeEndField.getText();
+
+        double vip = 0, reg = 0, stu = 0;
+
+        if (vipCheckBox.isSelected()) {
+            vip = Double.parseDouble(vipPriceField.getText());
+        }
+        if (regularCheckBox.isSelected()) {
+            reg = Double.parseDouble(regularPriceField.getText());
+        }
+        if (studentCheckBox.isSelected()) {
+            stu = Double.parseDouble(studentPriceField.getText());
+        }
+
+        Ticket t = new Ticket(eventName, startSeat, endSeat, vip, reg, stu);
+        ticketList.add(t);
+
+        statusLabel.setText("Saved ticket for " + eventName + " | Seats " + startSeat + "-" + endSeat);
     }
 }

@@ -1,10 +1,8 @@
-package com.example.opp_project_g10.abirm;
-
-import javafx.scene.control.DatePicker;
+package com.example.opp_project_g10.abirm.modelClass;
 
 import java.time.LocalDate;
 
-public class event {
+public class Event {
 
     private String eventName;
     private String eventType;
@@ -16,10 +14,10 @@ public class event {
 
     private String resourceNotes;
 
-    public event() {
+    public Event() {
     }
 
-    public event(String eventName, String eventType, LocalDate eventDate, boolean lightingRequired, boolean soundRequired, boolean securityRequired, String resourceNotes) {
+    public Event(String eventName, String eventType, LocalDate eventDate, boolean lightingRequired, boolean soundRequired, boolean securityRequired, String resourceNotes) {
         this.eventName = eventName;
         this.eventType = eventType;
         this.eventDate = eventDate;
