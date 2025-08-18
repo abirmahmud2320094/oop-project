@@ -74,6 +74,6 @@ public class u1c {
         eventTableView.getItems().clear();
         eventTableView.getItems().addAll(eventList);
 
-        errormessagesLabel.setText("✅ Event scheduled: " + name);
+        errormessagesLabel.setText("Event scheduled: " + name);
     }
 }
